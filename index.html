@@ -1,13 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Taskero</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="App">
+      <div class="app__container">
+        <div class="app__controls">
+          <div class="main__controls">
+            <div class="app__logo"></div>
+            <div class="profile">
+              <div class="profile__info" style="">
+                <div class="profile__img"></div> 
+                <div class="profile__user">
+                  <div class="profile__name">Jenny Wilson</div>
+                  <div class="profile__status">Premium account</div>
+                </div>
+              </div>
+              <div class="profile__options">
+                <div class="control-btn">Activity</div>
+                <div class="control-btn">My Profile</div>
+              </div>
+            </div>
+            <div class="pages">
+              <div class="pages__title">Pages</div>
+              <div class="pages__options">
+                <div class="control-btn">Dashboard</div>
+                <div class="control-btn">Tasks</div>
+                <div class="control-btn">Teams</div>
+                <div class="control-btn">Messages</div>
+                <div class="control-btn">Calendar</div>
+              </div>
+            </div>
+            <div class="labels">
+              <div class="labels__title">Labels</div>
+              <div class="labels__options">
+                <div class="control-btn">High Priority</div>
+                <div class="control-btn">Medium Priority</div>
+                <div class="control-btn">Low Priority</div>
+                <div class="control-btn">On Standby</div>                
+              </div>
+            </div>            
+          </div>
+          <div class="auth__controls"></div>
+        </div>
+        <div class="app__display" style="background-color: #fff; border-radius: 12px; padding: 32px; width: 100%;">
+          <div class="display__controls" style="display: flex; flex-direction: column;">
+            <div class="search__pages" >
+              <div class="page__name" style="font-size: 24px; font-weight: 500;">Team tasks</div>
+              <div class="search__controls" style="display: flex; flex-direction: row;">
+                <input type="search" name="" id="" placeholder="search" class="search__input">
+                <a href="#" class="create__btn">+ Create task</a>
+              </div>
+            </div>
+            <div class="filter__controls" style="margin: 38px 0; font-size: 16px;">
+              <div class="filter">Filter</div>
+              <div>                
+                <span class="sort">Sort by</span>
+                <span class="group">Group by</span>
+              </div>
+            </div>
+          </div>
+          <div class="display__screen">
+            <div class="task__group">
+              <div class="group__head">
+                <div class="group__title" style="margin-bottom: 10px;">To Do</div>
+                <div class="group__controls"></div>
+              </div>
+              <div class="group__body">
+                <div class="task__card" style="background-color: #fff; padding: 27px 15px; border-radius: 5px; margin-bottom: 15px;">
+                  <div class="task__head" style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                      <div>Layout design</div>
+                      <div>Document link</div>
+                    </div>
+                    <div>...</div>
+                  </div>
+                  <div class="task__body">
+                    <div>
+                      <div>update</div>
+                      <div>web</div>
+                    </div>
+                    <div>12 days left</div>
+                  </div>
+                  <div class="task__footer">
+                    <div>x</div>
+                    <div>x</div>
+                  </div>
+                </div>
+                <div class="task__card" style="background-color: #fff; padding: 27px 15px; border-radius: 5px; margin-bottom: 15px;">
+                  <div class="task__head" style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                      <div>Layout design</div>
+                      <div>Document link</div>
+                    </div>
+                    <div>...</div>
+                  </div>
+                  <div class="task__body">
+                    <div>
+                      <div>update</div>
+                      <div>web</div>
+                    </div>
+                    <div>12 days left</div>
+                  </div>
+                  <div class="task__footer">
+                    <div>x</div>
+                    <div>x</div>
+                  </div>
+                </div>
+                <div class="task__card" style="background-color: #fff; padding: 27px 15px; border-radius: 5px; margin-bottom: 15px;">
+                  <div class="task__head" style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                      <div>Layout design</div>
+                      <div>Document link</div>
+                    </div>
+                    <div>...</div>
+                  </div>
+                  <div class="task__body">
+                    <div>
+                      <div>update</div>
+                      <div>web</div>
+                    </div>
+                    <div>12 days left</div>
+                  </div>
+                  <div class="task__footer">
+                    <div>x</div>
+                    <div>x</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="task__group">
+              <div class="group__head">
+                <div class="group__title">In Progress</div>
+                <div class="group__controls"></div>
+              </div>
+              <div class="group__body">
+              </div>
+            </div>
+            <div class="task__group">
+              <div class="group__head">
+                <div class="group__title">In Review</div>
+                <div class="group__controls"></div>
+              </div>
+              <div class="group__body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>

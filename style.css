@@ -1,97 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); 
+/* font-family: 'Poppins', sans-serif; */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --bg-color: #ccdbda;
+  --text-color:#5f676f;
+  --btn-color-active: #058179;
+  --asasv-sv:#2c2c2c;
+  --app-color:#f7f7f7;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --main-bg1-color: #f6f6f6;
+  --main-bg2-color: #99b1b0;
+  --main-bg3-color: #758e8a;
+  --main-bg4-color: #38413e;
+  --main-bg5-color: #a79a53;
+  --main-bg6-color: #629a6a;
+  
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
+
+#App {
+  height: 100vh;
+  background-color: var(--bg-color);
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.app__container{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--app-color);
+  padding: 15px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 1700px;
+  margin: 10px;
+}
+.app__logo{
+  width: 100px;
+  height: 40px;
+  background-image: url(/Logo.png);
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.profile__img{
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  background-image: url(Profile_pic.png);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.app__controls {
+  min-width: 220px;
 }
+.main__controls {
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+}
+.profile {
+  
+}
+.profile__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile__user {
+
+}
+.profile__name {
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.profile__status {
+  font-size: 12px;
+  color: var(--text-color);
+}
+.profile__options {
+
+}
+.control-btn {
+  padding: 13px;
+}
+.pages{
+  
+}
+.pages__title {
+  font-size: 20px;
+}
+.pages__options {
+
+}
+.labels {
+
+}
+.labels__title {
+
+}
+.labels__options {
+
+}           
+.auth__controls {
+
+}
+.app__display {
+
+}
+.filter__controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search__pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.display__screen{
+  display: flex;
+  flex-direction: row;  
+}
+.task__group{
+  width: 33%;
+  background-color: var(--app-color);
+  padding: 34px 18px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.create__btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #058179;
+  padding: 10px;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.search__input{
+  padding: 10px 20px;
+}
+.task__body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
+
+
+
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
