@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 /* font-family: 'Poppins', sans-serif; */
 
 :root {
   --bg-color: #ccdbda;
-  --text-color:#5f676f;
+  --text-color: #5f676f;
   --btn-color-active: #058179;
-  --asasv-sv:#2c2c2c;
-  --app-color:#f7f7f7;
+  --asasv-sv: #2c2c2c;
+  /* --app-color: #f7f7f7; */
+  --app-color: #e0dede;
 
   --main-bg1-color: #f6f6f6;
   --main-bg2-color: #99b1b0;
@@ -14,10 +15,7 @@
   --main-bg4-color: #38413e;
   --main-bg5-color: #a79a53;
   --main-bg6-color: #629a6a;
-  
 }
-
-
 
 #App {
   height: 100vh;
@@ -26,9 +24,9 @@
   flex-direction: row;
   /* align-items: center; */
   justify-content: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.app__container{
+.app__container {
   display: flex;
   flex-direction: row;
   background-color: var(--app-color);
@@ -38,7 +36,7 @@
   max-width: 1700px;
   margin: 10px;
 }
-.app__logo{
+.app__logo {
   width: 100px;
   height: 40px;
   background-image: url(/Logo.png);
@@ -46,11 +44,11 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.profile__img{
+.profile__img {
   width: 60px;
   height: 60px;
   margin-right: 15px;
-  background-image: url(Profile_pic.png);  
+  background-image: url(Profile_pic.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,10 +60,8 @@
   min-width: 220px;
 }
 .main__controls {
-
 }
 .profile {
-  
 }
 .profile__info {
   display: flex;
@@ -73,69 +69,106 @@
   align-items: center;
 }
 .profile__user {
-
 }
 .profile__name {
   font-size: 16px;
   font-weight: 600;
-
 }
 .profile__status {
   font-size: 12px;
   color: var(--text-color);
 }
 .profile__options {
-
 }
 .control-btn {
   padding: 13px;
 }
-.pages{
-  
+.control-btn {
+  padding: 13px;
+  cursor: pointer;
 }
-.pages__title {
-  font-size: 20px;
+.control-btn:hover {
+  background-color: #05817957;
+  color: var(--btn-color-active);
 }
-.pages__options {
-
+.menu__group {
+  margin: 10px 0;
+}
+.pages {
 }
 .labels {
-
 }
-.labels__title {
-
+.drop_container {
+  display: none;
 }
-.labels__options {
+.menu__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.menu__options {
+}
 
-}           
 .auth__controls {
-
 }
 .app__display {
-
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
 }
-.filter__controls{
+.filter__controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.search__pages{
+.search__pages {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.display__screen{
+.display__screen {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
-.task__group{
+.page__name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.group__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.task__group {
   width: 33%;
   background-color: var(--app-color);
   padding: 34px 18px;
   margin-right: 10px;
   border-radius: 10px;
 }
-.create__btn{
+.task__card {
+  background-color: #fff;
+  padding: 27px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.task__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.task__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.task__link {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.create__btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,23 +179,30 @@
   color: white;
   border-radius: 10px;
 }
-.search__input{
+.search__input {
   padding: 10px 20px;
+  margin-right: 26px;
+  border-radius: 8px;
+  background-color: var(--app-color);
+  border: none;
 }
-.task__body{
+.task__body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-
-
-
-
-
-
-
+.task__tag {
+  color: gray;
+  background-color: rgb(175, 175, 175);
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 5px;
+}
+.task__tag-container {
+  display: flex;
+  flex-direction: row;
+}
 
 @media (prefers-color-scheme: light) {
-
 }
