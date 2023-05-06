@@ -37,8 +37,8 @@
   margin: 10px;
 }
 .app__logo {
-  width: 100px;
-  height: 40px;
+  width: auto;
+  height: 65px;
   background-image: url(/Logo.png);
   background-size: cover;
   background-size: contain;
@@ -58,8 +58,12 @@
 
 .app__controls {
   min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main__controls {
+  padding-right: 15px;
 }
 .profile {
 }
@@ -67,6 +71,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 10px 0;
 }
 .profile__user {
 }
@@ -81,15 +86,19 @@
 .profile__options {
 }
 .control-btn {
-  padding: 13px;
-}
-.control-btn {
-  padding: 13px;
+  padding: 13px 0;
   cursor: pointer;
 }
 .control-btn:hover {
   background-color: #05817957;
   color: var(--btn-color-active);
+}
+.menu__container{
+  overflow-y: scroll;
+  max-height: 65vh;
+}
+.menu__container::-webkit-scrollbar {
+  width: 0;
 }
 .menu__group {
   margin: 10px 0;
@@ -121,11 +130,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 38px 0;
+  font-size: 16px
 }
 .search__pages {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.sort{
+  margin-right: 25px;
 }
 .display__screen {
   display: flex;
@@ -135,10 +149,15 @@
   font-size: 24px;
   font-weight: 600;
 }
-.group__title {
-  margin-bottom: 10px;
+.group__title {  
   font-size: 18px;
   font-weight: 600;
+}
+.group__head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .task__group {
   width: 33%;
@@ -157,10 +176,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .task__title {
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .task__link {
   font-size: 12px;
@@ -186,6 +207,10 @@
   background-color: var(--app-color);
   border: none;
 }
+.search__controls{
+  display: flex;
+  flex-direction: row
+}
 .task__body {
   display: flex;
   flex-direction: row;
@@ -202,6 +227,10 @@
 .task__tag-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
+}
+.display__controls{
+  display: flex; flex-direction: column
 }
 
 @media (prefers-color-scheme: light) {
